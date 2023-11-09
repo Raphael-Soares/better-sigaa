@@ -1,0 +1,46 @@
+#agenda-docente {
+  list-style-type: none !important;
+  padding: 0 !important;
+
+  > * {
+    display: block !important;
+    margin-bottom: 10px !important;
+  }
+
+  img {
+    display: none !important;
+  }
+
+  a::before {
+    all: unset !important;
+    content: attr(title) !important;
+    display: block !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    font-size: 1.2em !important;
+
+    padding: 5px 10px !important;
+    text-decoration: none !important;
+    color: #fff !important;
+
+    background: #34406a !important;
+
+    border-radius: 5px !important;
+
+    transition: all 0.2s ease-in-out !important;
+
+    &:hover {
+      background: #465486 !important;
+    }
+  }
+
+  input {
+    display: none !important;
+    background: transparent !important;
+  }
+
+  a[href="https://pergamum.ifc.edu.br/meupergamum"]:before
+  {
+    content: 'Meu Pergamum' !important;
+  }
+}

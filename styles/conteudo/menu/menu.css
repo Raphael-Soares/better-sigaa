@@ -1,0 +1,15 @@
+#menu-dropdown .wrapper > form {
+  padding: 0 !important;
+  background: transparent !important;
+  width: 100% !important;
+}
+#menu-dropdown .wrapper > form * {
+  font-size: 14px !important;
+}
+#menu-dropdown .wrapper > form tbody {
+  width: 100% !important;
+  background: blue !important;
+}
+#menu-dropdown .wrapper > form tbody tr {
+  width: 100% !important;
+}/*# sourceMappingURL=menu.css.map */

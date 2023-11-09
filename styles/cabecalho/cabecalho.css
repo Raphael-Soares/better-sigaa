@@ -1,15 +1,6 @@
-* {
-  font-family: "Arial" !important;
+#cabecalho {
+  background: #34406a !important;
 }
-
-#container {
-  width: 100% !important;
-}
-
-.dir {
-  position: relative !important;
-}
-
 #cabecalho #info-sistema {
   background: #34406a !important;
   padding: 10px 10px !important;
@@ -36,14 +27,20 @@
   padding: 0 !important;
   display: flex !important;
   flex-direction: row-reverse !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+  background: #465486 !important;
   height: 100% !important;
 }
 #cabecalho #painel-usuario #menu-usuario {
   background: #465486 !important;
-  width: 100% !important;
+  width: -moz-min-content !important;
+  width: min-content !important;
+  height: 100% !important;
 }
 #cabecalho #painel-usuario #menu-usuario ul {
   width: 100% !important;
+  height: 100% !important;
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
@@ -62,9 +59,9 @@
   padding: 10px 10px !important;
   font-size: 1em;
   color: #fff !important;
+  white-space: nowrap;
 }
 #cabecalho #painel-usuario #info-usuario {
-  width: 100% !important;
   display: flex !important;
   flex-direction: row !important;
   align-items: start !important;
@@ -72,13 +69,14 @@
   padding: 10px 10px !important;
   background: #465486 !important;
   border: none !important;
-  gap: 10px !important;
+  gap: 15px !important;
 }
 #cabecalho #painel-usuario #info-usuario * {
   color: #fff !important;
   font-size: 1em;
 }
 #cabecalho #painel-usuario #info-usuario p {
+  all: unset !important;
   font-size: 1em;
   color: #fff !important;
 }
@@ -88,10 +86,13 @@
 #cabecalho #painel-usuario #info-usuario .usuario {
   width: auto;
 }
+#cabecalho #painel-usuario #menu-principal {
+  display: none;
+}
 #cabecalho #painel-usuario ul {
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between !important;
   align-items: center !important;
   width: 100% !important;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=cabecalho.css.map */
