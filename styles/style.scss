@@ -1,0 +1,53 @@
+* {
+  font-family: 'Arial' !important;
+}
+
+#container {
+  width: 100% !important;
+}
+
+.dir {
+  position: relative !important;
+}
+
+#cabecalho {
+  #info-sistema {
+    background: #34406a !important;
+    padding: 10px 10px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between !important;
+    border: none !important;
+    h1 {
+      font-weight: normal !important;
+      font-size: 1em !important;
+      ::after {
+        content: ' by @prayplagues(twitter)';
+      }
+
+      h3 {
+        font-weight: normal !important;
+        font-size: 1em !important;
+        margin: 0 !important;
+        font-weight: bold !important;
+      }
+    }
+  }
+
+  #menu-usuario {
+    ul {
+      display: flex !important;
+      flex-direction: row !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      width: 100% !important;
+    }
+  }
+
+  #info-usuario {
+  }
+
+  #menu-principal {
+  }
+}

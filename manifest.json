@@ -1,0 +1,13 @@
+{
+  "name": "Injector",
+  "description": "Inject Your Custom JavaScript And CSS To Any Website.",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://*.sig.ifc.edu.br/*"],
+      "js": ["app.js"],
+      "css": ["styles/style.css"]
+    }
+  ]
+}
