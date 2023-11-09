@@ -23,7 +23,7 @@
       font-weight: normal !important;
       font-size: 1em !important;
       ::after {
-        content: ' by @prayplagues(twitter)';
+        content: ' Visual melhorado por @prayplagues(twitter)';
       }
 
       h3 {
@@ -35,7 +35,76 @@
     }
   }
 
-  #menu-usuario {
+  #painel-usuario {
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: row-reverse !important;
+
+    height: 100% !important;
+
+    #menu-usuario {
+      background: #465486 !important;
+
+      width: 100% !important;
+      ul {
+        width: 100% !important;
+
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+        li {
+          background: #465486 !important;
+
+          :hover {
+            opacity: 0.8 !important;
+            background: #36426fa0 !important;
+          }
+        }
+
+        li > a,
+        li > span > a {
+          background: transparent !important;
+          padding: 10px 10px !important;
+          font-size: 1em;
+          color: #fff !important;
+        }
+      }
+    }
+
+    #info-usuario {
+      width: 100% !important;
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: start !important;
+      justify-content: flex-start !important;
+      padding: 10px 10px !important;
+      background: #465486 !important;
+      border: none !important;
+      gap: 10px !important;
+
+      * {
+        color: #fff !important;
+        font-size: 1em;
+      }
+
+      p {
+        font-size: 1em;
+        color: #fff !important;
+
+        i > small > a {
+          color: #c4d2eb !important;
+        }
+      }
+
+      .usuario {
+        width: auto;
+      }
+    }
+
+    #menu-principal {
+    }
     ul {
       display: flex !important;
       flex-direction: row !important;
@@ -43,11 +112,5 @@
       align-items: center !important;
       width: 100% !important;
     }
-  }
-
-  #info-usuario {
-  }
-
-  #menu-principal {
   }
 }
