@@ -1,60 +1,67 @@
 #cabecalho {
-  background: #34406a !important;
+  all: unset !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  background-color: #34406a !important;
+  height: 10vh !important;
 }
 #cabecalho #info-sistema {
-  background: #34406a !important;
-  padding: 10px 10px !important;
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center;
-  justify-content: space-between !important;
-  border: none !important;
-}
-#cabecalho #info-sistema h1 {
-  font-weight: normal !important;
-  font-size: 1em !important;
-}
-#cabecalho #info-sistema h1 ::after {
-  content: " Visual melhorado por @prayplagues(twitter)";
-}
-#cabecalho #info-sistema h1 h3 {
-  font-weight: normal !important;
-  font-size: 1em !important;
-  margin: 0 !important;
-  font-weight: bold !important;
-}
-#cabecalho #painel-usuario {
-  padding: 0 !important;
-  display: flex !important;
-  flex-direction: row-reverse !important;
-  align-items: flex-start !important;
-  justify-content: space-between !important;
-  background: #465486 !important;
-  height: 100% !important;
-}
-#cabecalho #painel-usuario #menu-usuario {
-  background: #465486 !important;
-  width: -moz-min-content !important;
-  width: min-content !important;
-  height: 100% !important;
-}
-#cabecalho #painel-usuario #menu-usuario ul {
-  width: 100% !important;
-  height: 100% !important;
+  all: unset !important;
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+#cabecalho #info-sistema h1 {
+  all: unset !important;
+  display: none !important;
+}
+#cabecalho #info-sistema h3 {
+  all: unset !important;
+  padding: 0 1em !important;
+  color: #fff !important;
+  font-size: 1em !important;
+  font-weight: 400 !important;
+}
+#cabecalho #painel-usuario {
+  all: unset !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background-color: #465486 !important;
+}
+#cabecalho #painel-usuario #menu-usuario {
+  all: unset !important;
+  height: 100% !important;
+}
+#cabecalho #painel-usuario #menu-usuario ul {
+  all: unset !important;
+  height: 100% !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  align-items: center !important;
   justify-content: flex-start !important;
 }
+#cabecalho #painel-usuario #menu-usuario ul .caixa-postal,
+#cabecalho #painel-usuario #menu-usuario ul .chamado,
+#cabecalho #painel-usuario #menu-usuario ul .menus {
+  display: none !important;
+}
 #cabecalho #painel-usuario #menu-usuario ul li {
-  background: #465486 !important;
+  all: unset !important;
 }
 #cabecalho #painel-usuario #menu-usuario ul li :hover {
-  opacity: 0.8 !important;
-  background: rgba(54, 66, 111, 0.6274509804) !important;
+  background: #34406a !important;
 }
-#cabecalho #painel-usuario #menu-usuario ul li > a,
-#cabecalho #painel-usuario #menu-usuario ul li > span > a {
+#cabecalho #painel-usuario #menu-usuario ul li a,
+#cabecalho #painel-usuario #menu-usuario ul li span > a {
   background: transparent !important;
   padding: 10px 10px !important;
   font-size: 1em;
@@ -62,18 +69,22 @@
   white-space: nowrap;
 }
 #cabecalho #painel-usuario #info-usuario {
+  all: unset !important;
+  width: 100% !important;
   display: flex !important;
   flex-direction: row !important;
   align-items: start !important;
   justify-content: flex-start !important;
   padding: 10px 10px !important;
-  background: #465486 !important;
   border: none !important;
   gap: 15px !important;
 }
-#cabecalho #painel-usuario #info-usuario * {
-  color: #fff !important;
-  font-size: 1em;
+#cabecalho #painel-usuario #info-usuario .periodo-atual *,
+#cabecalho #painel-usuario #info-usuario .usuario * {
+  text-transform: capitalize !important;
+}
+#cabecalho #painel-usuario #info-usuario .unidade {
+  display: none !important;
 }
 #cabecalho #painel-usuario #info-usuario p {
   all: unset !important;
@@ -88,11 +99,4 @@
 }
 #cabecalho #painel-usuario #menu-principal {
   display: none;
-}
-#cabecalho #painel-usuario ul {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: space-between !important;
-  align-items: center !important;
-  width: 100% !important;
 }/*# sourceMappingURL=cabecalho.css.map */
