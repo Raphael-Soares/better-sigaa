@@ -6,14 +6,8 @@
   "content_scripts": [
     {
       "matches": ["https://*.sig.ifc.edu.br/*"],
-      "js": ["app.js"],
-      "css": [
-        "styles/main.css",
-        "styles/cabecalho/cabecalho.css",
-        "styles/conteudo/menu/menu.css",
-        "styles/conteudo/main/index.css",
-        "styles/conteudo/perfil/perfil.css"
-      ]
+      "js": ["app.js", "views/portal-docente.js"],
+      "css": ["styles/main.css", "styles/cabecalho/cabecalho.css"]
     }
   ]
 }

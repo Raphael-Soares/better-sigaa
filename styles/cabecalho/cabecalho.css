@@ -1,10 +1,12 @@
 #cabecalho {
   all: unset !important;
+  position: relative !important;
+  width: 100% !important;
   display: flex !important;
-  flex-direction: column !important;
+  flex-direction: row-reverse !important;
   align-items: center !important;
+  justify-content: center !important;
   background-color: #34406a !important;
-  height: 10vh !important;
 }
 #cabecalho #info-sistema {
   all: unset !important;
@@ -12,19 +14,16 @@
   flex-direction: row !important;
   align-items: center !important;
   justify-content: space-between !important;
-  width: 100% !important;
-  height: 100% !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+  padding: 0.5em !important;
 }
-#cabecalho #info-sistema h1 {
-  all: unset !important;
-  display: none !important;
+#cabecalho #info-sistema #tempoSessao {
+  white-space: nowrap !important;
 }
+#cabecalho #info-sistema h1,
 #cabecalho #info-sistema h3 {
-  all: unset !important;
-  padding: 0 1em !important;
-  color: #fff !important;
-  font-size: 1em !important;
-  font-weight: 400 !important;
+  display: none !important;
 }
 #cabecalho #painel-usuario {
   all: unset !important;
@@ -34,7 +33,6 @@
   flex-direction: row-reverse !important;
   align-items: center !important;
   justify-content: space-between !important;
-  background-color: #465486 !important;
 }
 #cabecalho #painel-usuario #menu-usuario {
   all: unset !important;
@@ -51,7 +49,8 @@
 }
 #cabecalho #painel-usuario #menu-usuario ul .caixa-postal,
 #cabecalho #painel-usuario #menu-usuario ul .chamado,
-#cabecalho #painel-usuario #menu-usuario ul .menus {
+#cabecalho #painel-usuario #menu-usuario ul .menus,
+#cabecalho #painel-usuario #menu-usuario ul .modulos {
   display: none !important;
 }
 #cabecalho #painel-usuario #menu-usuario ul li {

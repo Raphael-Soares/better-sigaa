@@ -1,12 +1,117 @@
 * {
   font-family: "Arial" !important;
-  font-size: 14px;
-}
-
-#container {
-  width: 100% !important;
+  font-size: 14px !important;
+  transition: all 300ms ease-in-out !important;
 }
 
 .dir {
   position: relative !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+.dir .acessibilidade {
+  display: none !important;
+}
+
+body {
+  background: #fafafa !important;
+}
+
+#container {
+  max-width: 1920px !important;
+  width: 100% !important;
+  height: 100% !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1) !important;
+}
+#container #conteudo {
+  background: none !important;
+}
+#container #conteudo #portal-docente {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(2);
+  grid-template-rows: repeat(2);
+}
+#container #conteudo #portal-docente #menu-dropdown {
+  position: relative !important;
+  grid-area: 1/1/2/3;
+  height: -moz-min-content !important;
+  height: min-content !important;
+}
+#container #conteudo #portal-docente #menu-dropdown * {
+  transition: none !important;
+}
+#container #conteudo #portal-docente #perfil-docente {
+  grid-area: 2/1/3/2;
+  width: 100% !important;
+  background-color: #eff3fa;
+}
+#container #conteudo #portal-docente #perfil-docente * {
+  border: none !important;
+  border-collapse: collapse !important;
+}
+#container #conteudo #portal-docente #perfil-docente .foto {
+  border: none !important;
+}
+#container #conteudo #portal-docente #perfil-docente .pessoal-docente {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+#container #conteudo #portal-docente #perfil-docente .pessoal-docente ul {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: space-between !important;
+}
+#container #conteudo #portal-docente #perfil-docente #form_links #agenda-docente {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+#container #conteudo #portal-docente #perfil-docente #form_links #agenda-docente > * {
+  display: block !important;
+  margin-bottom: 10px !important;
+}
+#container #conteudo #portal-docente #perfil-docente #form_links #agenda-docente img {
+  display: none !important;
+}
+#container #conteudo #portal-docente #perfil-docente #form_links #agenda-docente a::before {
+  all: unset !important;
+  content: attr(title) !important;
+  display: block !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  font-size: 1.2em !important;
+  padding: 5px 10px !important;
+  text-decoration: none !important;
+  color: #fff !important;
+  background: #ced5e2 !important;
+  transition: all 0.2s ease-in-out !important;
+}
+#container #conteudo #portal-docente #perfil-docente #form_links #agenda-docente a::before:hover {
+  background: #465486 !important;
+}
+#container #conteudo #portal-docente #perfil-docente #form_links #agenda-docente input {
+  display: none !important;
+  background: transparent !important;
+}
+#container #conteudo #portal-docente #perfil-docente #form_links #agenda-docente a[href="https://pergamum.ifc.edu.br/meupergamum"]:before {
+  content: "Meu Pergamum" !important;
+}
+#container #conteudo #portal-docente #main-docente {
+  width: 70% !important;
+  all: unset !important;
+  grid-area: 2/2/3/3 !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+#forum-portal,
+#participantes,
+.info-docente {
+  display: none !important;
 }/*# sourceMappingURL=main.css.map */

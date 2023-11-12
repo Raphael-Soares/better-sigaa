@@ -1,13 +1,14 @@
 #cabecalho {
   all: unset !important;
+  position: relative !important;
+  width: 100% !important;
 
   display: flex !important;
-  flex-direction: column !important;
+  flex-direction: row-reverse !important;
   align-items: center !important;
+  justify-content: center !important;
 
   background-color: #34406a !important;
-
-  height: 10vh !important;
 
   #info-sistema {
     all: unset !important;
@@ -17,21 +18,16 @@
     align-items: center !important;
     justify-content: space-between !important;
 
-    width: 100% !important;
-    height: 100% !important;
+    width: max-content !important;
+    padding: 0.5em !important;
 
-    h1 {
-      all: unset !important;
-      display: none !important;
+    #tempoSessao {
+      white-space: nowrap !important;
     }
 
+    h1,
     h3 {
-      all: unset !important;
-
-      padding: 0 1em !important;
-      color: #fff !important;
-      font-size: 1em !important;
-      font-weight: 400 !important;
+      display: none !important;
     }
   }
 
@@ -45,8 +41,6 @@
     flex-direction: row-reverse !important;
     align-items: center !important;
     justify-content: space-between !important;
-
-    background-color: #465486 !important;
 
     #menu-usuario {
       all: unset !important;
@@ -65,7 +59,8 @@
 
         .caixa-postal,
         .chamado,
-        .menus {
+        .menus,
+        .modulos {
           display: none !important;
         }
 
