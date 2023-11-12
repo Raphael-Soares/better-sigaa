@@ -1,6 +1,6 @@
 {
-  "name": "Injector",
-  "description": "Inject Your Custom JavaScript And CSS To Any Website.",
+  "name": "Better SIGAA by Raphael Soares",
+  "description": "Um novo visual para o sistema SIGAA.",
   "version": "0.0.0.1",
   "manifest_version": 3,
   "content_scripts": [

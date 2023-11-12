@@ -1,5 +1,5 @@
 * {
-  font-family: 'Arial' !important;
+  font-family: Helvetica, Arial, sans-serif !important;
   font-size: 14px !important;
   transition: all 300ms ease-in-out !important;
 }
@@ -45,87 +45,85 @@ html {
       }
 
       #perfil-docente {
+        all: unset !important;
         grid-area: 2 / 1 / 3 / 2 !important;
         max-width: 30vw !important;
         width: 100% !important;
 
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        justify-content: flex-end !important;
         background-color: #eff3fa !important;
 
-        * {
-          border: none !important;
-
-          border-collapse: collapse !important;
-        }
-
-        .foto {
-          border: none !important;
-        }
-
         .pessoal-docente {
-          all: unset !important;
-
-          display: flex !important;
-          flex-direction: row !important;
-          align-items: center !important;
-          justify-content: flex-start !important;
-          ul {
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: flex-start !important;
-            justify-content: space-between !important;
-          }
+          display: none !important;
         }
 
-        #form_links {
-          #agenda-docente {
+        #agenda-docente {
+          margin: 0;
+
+          padding: 1em;
+          padding-bottom: 1em;
+        }
+
+        #form_links,
+        p[style='text-align: center; font-size: x-small'],
+        br {
+          display: none !important;
+        }
+
+        .INJECTED_LINKS {
+          padding-top: 1em !important;
+          background-color: #eff3fa !important;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 1fr);
+          grid-column-gap: 0px;
+          grid-row-gap: 0px;
+
+          @media (max-width: 960px) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+          }
+
+          a {
+            white-space: nowrap !important;
             display: flex !important;
-            flex-direction: column !important;
-            justify-content: space-between !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: flex-start !important;
 
-            > * {
-              display: block !important;
-              margin-bottom: 10px !important;
-            }
+            padding: 10px !important;
+            text-decoration: none !important;
+            color: #404e82 !important;
 
-            img {
-              display: none !important;
-            }
-
-            a::before {
-              all: unset !important;
-              content: attr(title) !important;
-              display: block !important;
-              text-align: center !important;
-              font-weight: bold !important;
-              font-size: 1.2em !important;
-              padding: 5px 10px !important;
-              text-decoration: none !important;
-              color: #fff !important;
-
-              background: #ced5e2 !important;
-
-              transition: all 0.2s ease-in-out !important;
-
-              &:hover {
-                background: #465486 !important;
-              }
-            }
-
-            input {
-              display: none !important;
-              background: transparent !important;
-            }
-
-            a[href="https://pergamum.ifc.edu.br/meupergamum"]:before
-            {
-              content: 'Meu Pergamum' !important;
+            &:hover {
+              background-color: #bac6db !important;
             }
           }
         }
       }
       #main-docente {
-        width: 100% !important;
+        all: unset;
+
+        padding: 0.5em;
+        border: solid red 1px;
         grid-area: 2 / 2 / 3 / 3 !important;
+
+        #noticias-portal {
+          padding: 1em;
+
+          display: flex;
+          align-items: center;
+
+          border-radius: 5px;
+
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+        }
+
+        #turmas-portal {
+          border: solid red 1px;
+        }
       }
     }
   }
@@ -133,6 +131,7 @@ html {
 
 #forum-portal,
 #participantes,
+br,
 .info-docente {
   display: none !important;
 }
