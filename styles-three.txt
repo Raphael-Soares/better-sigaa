@@ -1,5 +1,0 @@
-body  
-  #container
-    #cabecalho
-      #info-sistema
-      

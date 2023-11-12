@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": ["https://*.sig.ifc.edu.br/*"],
-      "js": ["app.js", "views/portal-docente.js"],
+      "js": ["app.js"],
       "css": ["styles/main.css", "styles/cabecalho/cabecalho.css"]
     }
   ]

@@ -88,11 +88,10 @@
 
       width: 100% !important;
       display: flex !important;
-      flex-direction: row !important;
+      flex-direction: row-reverse !important;
       align-items: start !important;
-      justify-content: flex-start !important;
-      padding: 10px 10px !important;
-      border: none !important;
+      justify-content: flex-end !important;
+      padding: 10px !important;
       gap: 15px !important;
 
       .periodo-atual,
@@ -103,7 +102,10 @@
       }
 
       .unidade {
-        display: none !important;
+        a {
+          color: #fff !important;
+          font-weight: bold !important;
+        }
       }
 
       p {

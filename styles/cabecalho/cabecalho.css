@@ -71,19 +71,19 @@
   all: unset !important;
   width: 100% !important;
   display: flex !important;
-  flex-direction: row !important;
+  flex-direction: row-reverse !important;
   align-items: start !important;
-  justify-content: flex-start !important;
-  padding: 10px 10px !important;
-  border: none !important;
+  justify-content: flex-end !important;
+  padding: 10px !important;
   gap: 15px !important;
 }
 #cabecalho #painel-usuario #info-usuario .periodo-atual *,
 #cabecalho #painel-usuario #info-usuario .usuario * {
   text-transform: capitalize !important;
 }
-#cabecalho #painel-usuario #info-usuario .unidade {
-  display: none !important;
+#cabecalho #painel-usuario #info-usuario .unidade a {
+  color: #fff !important;
+  font-weight: bold !important;
 }
 #cabecalho #painel-usuario #info-usuario p {
   all: unset !important;
