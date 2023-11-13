@@ -105,24 +105,111 @@ html {
       }
       #main-docente {
         all: unset;
-
+        display: flex;
+        flex-direction: column;
         padding: 0.5em;
-        border: solid red 1px;
+        gap: 0.5em;
         grid-area: 2 / 2 / 3 / 3 !important;
 
         #noticias-portal {
-          padding: 1em;
+          all: unset;
+          padding: 2em 1em;
+          background-color: #fffcf5;
 
           display: flex;
-          align-items: center;
+          flex-direction: column;
+          gap: 0.5em;
 
           border-radius: 5px;
 
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+          p {
+            all: unset;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #4b3f23;
+          }
         }
 
         #turmas-portal {
-          border: solid red 1px;
+          all: unset;
+          display: flex;
+          flex-direction: column;
+          gap: 2em;
+
+          h4 {
+            all: unset;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #404e82;
+          }
+
+          .rotator {
+            width: 100% !important;
+          }
+
+          table[style='margin-top: 1%;'] {
+            width: 100% !important;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+            margin-top: 0 !important;
+
+            thead {
+              width: 100% !important;
+
+              tr {
+                background-color: #dedfe3 !important;
+
+                width: 100% !important;
+                display: none;
+                th {
+                  width: 100% !important;
+
+                  padding: 0.5em !important;
+                  background-color: unset !important;
+                }
+              }
+            }
+
+            tbody {
+              display: flex;
+              flex-direction: column;
+              width: 100% !important;
+
+              tr {
+                all: unset;
+                width: 100% !important;
+
+                &:nth-child(even) {
+                  background: #ccc;
+                }
+                &:nth-child(odd) {
+                  display: none;
+                }
+
+                td {
+                  padding: 0.5em;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+          .subFormulario {
+            width: 100% !important;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+            #formAtualizacoesTurmas {
+              width: 100% !important;
+            }
+
+            tbody {
+              tr {
+                td {
+                  width: 100% !important;
+
+                  padding: 0.5em;
+                }
+              }
+            }
+          }
         }
       }
     }

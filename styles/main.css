@@ -92,19 +92,90 @@ html {
 }
 #container #conteudo #portal-docente #main-docente {
   all: unset;
+  display: flex;
+  flex-direction: column;
   padding: 0.5em;
-  border: solid red 1px;
+  gap: 0.5em;
   grid-area: 2/2/3/3 !important;
 }
 #container #conteudo #portal-docente #main-docente #noticias-portal {
-  padding: 1em;
+  all: unset;
+  padding: 2em 1em;
+  background-color: #fffcf5;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+}
+#container #conteudo #portal-docente #main-docente #noticias-portal p {
+  all: unset;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4b3f23;
 }
 #container #conteudo #portal-docente #main-docente #turmas-portal {
-  border: solid red 1px;
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal h4 {
+  all: unset;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #404e82;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal .rotator {
+  width: 100% !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] {
+  width: 100% !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+  margin-top: 0 !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead {
+  width: 100% !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead tr {
+  background-color: #dedfe3 !important;
+  width: 100% !important;
+  display: none;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead tr th {
+  width: 100% !important;
+  padding: 0.5em !important;
+  background-color: unset !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr {
+  all: unset;
+  width: 100% !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr:nth-child(even) {
+  background: #ccc;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr:nth-child(odd) {
+  display: none;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td {
+  padding: 0.5em;
+  white-space: nowrap;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal .subFormulario {
+  width: 100% !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal .subFormulario #formAtualizacoesTurmas {
+  width: 100% !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal .subFormulario tbody tr td {
+  width: 100% !important;
+  padding: 0.5em;
 }
 
 #forum-portal,
