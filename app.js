@@ -17,5 +17,7 @@ document.querySelector('#perfil-docente').innerHTML += `
 const userInfo = document.querySelector('#info-usuario');
 const fotoPerfil = document.querySelector('.foto');
 const mudarSenha = document.querySelector('#mudar-senha');
+const tabelaMaterias = document.querySelector('.subFormulario');
+
 document.querySelector('.pessoal-docente ul').append(document.querySelector('.dados-pessoais'));
 document.querySelector('#painel-usuario').append(fotoPerfil);

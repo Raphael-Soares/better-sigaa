@@ -126,46 +126,6 @@ html {
   font-weight: bold;
   color: #404e82;
 }
-#container #conteudo #portal-docente #main-docente #turmas-portal .rotator {
-  width: 100% !important;
-}
-#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] {
-  width: 100% !important;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
-  margin-top: 0 !important;
-}
-#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead {
-  width: 100% !important;
-}
-#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead tr {
-  background-color: #dedfe3 !important;
-  width: 100% !important;
-  display: none;
-}
-#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead tr th {
-  width: 100% !important;
-  padding: 0.5em !important;
-  background-color: unset !important;
-}
-#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody {
-  display: flex;
-  flex-direction: column;
-  width: 100% !important;
-}
-#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr {
-  all: unset;
-  width: 100% !important;
-}
-#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr:nth-child(even) {
-  background: #ccc;
-}
-#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr:nth-child(odd) {
-  display: none;
-}
-#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td {
-  padding: 0.5em;
-  white-space: nowrap;
-}
 #container #conteudo #portal-docente #main-docente #turmas-portal .subFormulario {
   width: 100% !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
@@ -176,6 +136,98 @@ html {
 #container #conteudo #portal-docente #main-docente #turmas-portal .subFormulario tbody tr td {
   width: 100% !important;
   padding: 0.5em;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] {
+  width: 100% !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+  margin-top: 0 !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead {
+  width: 100% !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead tr {
+  all: unset;
+  background-color: #dedfe3 !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead tr th:last-child {
+  display: none !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead tr th {
+  all: unset;
+  padding: 0.5em;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td:last-child {
+  display: none !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr:has(td[style="display: none;"]), #container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr:first-child, #container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr:empty {
+  display: none !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr:hover {
+  background-color: #dedfe3 !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td[style="text-align:left"] {
+  width: -moz-min-content !important;
+  width: min-content !important;
+  margin-left: 0 !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td:has(center) {
+  width: 100% !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td:has(center) center {
+  text-align: right !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td:has(form) {
+  width: -moz-min-content !important;
+  width: min-content !important;
+  min-width: 50% !important;
+  padding: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td:has(form) * {
+  text-decoration: none;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td {
+  all: unset;
+  width: 100% !important;
+  min-width: -moz-fit-content !important;
+  min-width: fit-content !important;
+  padding: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td * {
+  text-decoration: none;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal span[style="text-align: left;"] {
+  display: none !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal span {
+  all: unset;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 #forum-portal,

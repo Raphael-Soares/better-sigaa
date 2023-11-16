@@ -144,55 +144,6 @@ html {
             color: #404e82;
           }
 
-          .rotator {
-            width: 100% !important;
-          }
-
-          table[style='margin-top: 1%;'] {
-            width: 100% !important;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
-            margin-top: 0 !important;
-
-            thead {
-              width: 100% !important;
-
-              tr {
-                background-color: #dedfe3 !important;
-
-                width: 100% !important;
-                display: none;
-                th {
-                  width: 100% !important;
-
-                  padding: 0.5em !important;
-                  background-color: unset !important;
-                }
-              }
-            }
-
-            tbody {
-              display: flex;
-              flex-direction: column;
-              width: 100% !important;
-
-              tr {
-                all: unset;
-                width: 100% !important;
-
-                &:nth-child(even) {
-                  background: #ccc;
-                }
-                &:nth-child(odd) {
-                  display: none;
-                }
-
-                td {
-                  padding: 0.5em;
-                  white-space: nowrap;
-                }
-              }
-            }
-          }
           .subFormulario {
             width: 100% !important;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
@@ -209,6 +160,124 @@ html {
                 }
               }
             }
+          }
+
+          table[style='margin-top: 1%;'] {
+            width: 100% !important;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+            margin-top: 0 !important;
+
+            thead {
+              width: 100% !important;
+
+              tr {
+                all: unset;
+                background-color: #dedfe3 !important;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                justify-content: space-between;
+
+                padding: 0.5em;
+
+                th:last-child {
+                  display: none !important;
+                }
+
+                th {
+                  all: unset;
+
+                  padding: 0.5em;
+                }
+              }
+            }
+            tbody {
+              display: flex;
+              flex-direction: column;
+              width: 100% !important;
+
+              tr {
+                all: unset;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                justify-content: space-between;
+
+                padding: 0.5em;
+
+                td:last-child {
+                  display: none !important;
+                }
+
+                &:has(td[style='display: none;']),
+                &:first-child,
+                &:empty {
+                  display: none !important;
+                }
+
+                &:hover {
+                  background-color: #dedfe3 !important;
+                }
+
+                td[style='text-align:left'] {
+                  width: min-content !important;
+                  margin-left: 0 !important;
+                }
+
+                td:has(center) {
+                  width: 100% !important;
+                  center {
+                    text-align: right !important;
+                  }
+                }
+
+                td:has(form) {
+                  width: min-content !important;
+                  min-width: 50% !important;
+                  padding: 0.5em;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+
+                  * {
+                    text-decoration: none;
+                  }
+                }
+                td {
+                  all: unset;
+                  width: 100% !important;
+                  min-width: fit-content !important;
+                  padding: 0.5em;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+
+                  * {
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+
+          span[style='text-align: left;'] {
+            display: none !important;
+          }
+
+          span {
+            all: unset;
+
+            width: 100%;
+
+            display: flex;
+
+            flex-direction: row;
+
+            justify-content: flex-end;
           }
         }
       }
