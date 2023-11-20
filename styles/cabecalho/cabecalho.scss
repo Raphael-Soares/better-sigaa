@@ -43,24 +43,23 @@
     justify-content: flex-end !important;
 
     .foto {
-      all: unset;
-      grid-area: 1 / 1 / 2 / 2;
-      margin: 0.5em;
+      all: unset !important;
+      grid-area: 1 / 1 / 2 / 2 !important;
+      margin: 0.5em !important;
 
-      width: 50px;
-      height: 50px;
+      width: 50px !important;
+      height: 50px !important;
 
-      overflow: hidden;
+      overflow: hidden !important;
 
-      border-radius: 50%;
+      border-radius: 50% !important;
 
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
-
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important ;
       img {
         width: 100%;
         width: 50px !important;
         height: 60px !important;
-        background-size: cover;
+        background-size: cover !important;
       }
     }
 
@@ -97,7 +96,7 @@
           span > a {
             background: transparent !important;
             padding: 10px 10px !important;
-            font-size: 1em;
+            font-size: 1em !important;
             color: #fff !important;
             white-space: nowrap;
           }
@@ -106,22 +105,22 @@
     }
 
     #menu-principal {
-      display: none;
+      display: none !important;
     }
   }
 }
 
 #info-usuario {
-  color: #fff;
+  color: #fff !important;
 
-  display: flex;
-  flex-direction: column-reverse;
+  display: flex !important;
+  flex-direction: column-reverse !important;
 
   .unidade {
-    display: none;
+    display: none !important;
   }
 
   * {
-    color: #fff;
+    color: #fff !important;
   }
 }

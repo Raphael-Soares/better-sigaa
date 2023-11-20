@@ -29,15 +29,16 @@ html {
 
   #conteudo {
     #portal-docente {
-      display: grid !important;
-      grid-template-columns: repeat(2) !important;
-      grid-template-rows: repeat(2) !important;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr 100px;
+      grid-template-areas:
+        'header header header'
+        'user main main'
+        'user main main';
 
       #menu-dropdown {
-        position: relative !important;
-        grid-area: 1 / 1 / 2 / 3;
-
-        height: min-content !important;
+        grid-area: header;
 
         * {
           transition: none !important;
@@ -46,8 +47,8 @@ html {
 
       #perfil-docente {
         all: unset !important;
-        grid-area: 2 / 1 / 3 / 2 !important;
-        max-width: 30vw !important;
+
+        grid-area: user;
         width: 100% !important;
 
         display: flex !important;
@@ -104,62 +105,44 @@ html {
         }
       }
       #main-docente {
-        all: unset;
-        display: flex;
-        flex-direction: column;
-        padding: 0.5em;
-        gap: 0.5em;
-        grid-area: 2 / 2 / 3 / 3 !important;
+        all: unset !important;
+        grid-area: main !important;
+
+        padding: 10px !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
 
         #noticias-portal {
-          all: unset;
-          padding: 2em 1em;
-          background-color: #fffcf5;
-
-          display: flex;
-          flex-direction: column;
-          gap: 0.5em;
-
-          border-radius: 5px;
-
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
-          p {
-            all: unset;
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #4b3f23;
-          }
+          display: none !important;
         }
 
         #turmas-portal {
-          all: unset;
-          display: flex;
-          flex-direction: column;
-          gap: 2em;
+          all: unset !important;
+
+          * {
+            all: unset !important;
+          }
+
+          width: 100% !important;
+
+          display: flex !important;
+          flex-direction: column !important;
+          justify-content: flex-start !important;
+          align-items: center !important;
 
           h4 {
-            all: unset;
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #404e82;
+            all: unset !important;
+            font-size: 1.5em !important;
+            font-weight: bold !important;
+            color: #404e82 !important;
+            padding: 0.5em !important;
           }
 
           .subFormulario {
-            width: 100% !important;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
-            #formAtualizacoesTurmas {
-              width: 100% !important;
-            }
-
-            tbody {
-              tr {
-                td {
-                  width: 100% !important;
-
-                  padding: 0.5em;
-                }
-              }
-            }
+            display: none !important;
           }
 
           table[style='margin-top: 1%;'] {
@@ -174,40 +157,40 @@ html {
                 all: unset;
                 background-color: #dedfe3 !important;
 
-                display: flex;
-                flex-direction: row;
-                align-items: center;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
 
-                justify-content: space-between;
+                justify-content: space-between !important;
 
-                padding: 0.5em;
+                padding: 0.5em !important;
 
                 th:last-child {
                   display: none !important;
                 }
 
                 th {
-                  all: unset;
+                  all: unset !important;
 
-                  padding: 0.5em;
+                  padding: 0.5em !important;
                 }
               }
             }
             tbody {
-              display: flex;
-              flex-direction: column;
+              display: flex !important;
+              flex-direction: column !important;
               width: 100% !important;
 
               tr {
                 all: unset;
 
-                display: flex;
-                flex-direction: row;
-                align-items: center;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
 
-                justify-content: space-between;
+                justify-content: space-between !important;
 
-                padding: 0.5em;
+                padding: 0.5em !important;
 
                 td:last-child {
                   display: none !important;
@@ -238,26 +221,26 @@ html {
                 td:has(form) {
                   width: min-content !important;
                   min-width: 50% !important;
-                  padding: 0.5em;
-                  white-space: nowrap;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
+                  padding: 0.5em !important;
+                  white-space: nowrap !important;
+                  overflow: hidden !important;
+                  text-overflow: ellipsis !important;
 
                   * {
-                    text-decoration: none;
+                    text-decoration: none !important;
                   }
                 }
                 td {
                   all: unset;
                   width: 100% !important;
                   min-width: fit-content !important;
-                  padding: 0.5em;
-                  white-space: nowrap;
-                  overflow: hidden;
-                  text-overflow: ellipsis;
+                  padding: 0.5em !important;
+                  white-space: nowrap !important;
+                  overflow: hidden !important;
+                  text-overflow: ellipsis !important;
 
                   * {
-                    text-decoration: none;
+                    text-decoration: none !important;
                   }
                 }
               }
@@ -280,6 +263,128 @@ html {
             justify-content: flex-end;
           }
         }
+
+        #formAtividades {
+          all: unset !important;
+          width: 100% !important;
+          h4 {
+            display: none !important;
+          }
+
+          #avaliacao-portal {
+            display: none !important;
+          }
+
+          table {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+            border-radius: 5px !important;
+            overflow: hidden !important;
+
+            width: 100% !important;
+
+            thead {
+              width: 100% !important;
+
+              tr {
+                all: unset;
+                background-color: #dedfe3 !important;
+
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
+
+                justify-content: space-around !important;
+
+                padding: 0.5em !important;
+
+                th:first-child {
+                  display: none !important;
+                }
+
+                th {
+                  all: unset !important;
+
+                  padding: 0.5em !important;
+                }
+              }
+            }
+            tbody {
+              display: flex !important;
+              flex-direction: column !important;
+
+              tr:first-child {
+                display: none !important;
+              }
+
+              tr {
+                all: unset !important;
+
+                display: flex !important;
+
+                flex-direction: row !important;
+
+                align-items: center !important;
+
+                justify-content: flex-start !important;
+
+                padding: 0.5em !important;
+
+                &:hover {
+                  background-color: #dedfe3 !important;
+                  cursor: pointer !important;
+                }
+
+                td[style='text-align:center;'] {
+                  width: 10% !important;
+                }
+
+                td:nth-child(2) {
+                  width: 20% !important;
+                }
+
+                td:last-child {
+                  width: 70% !important;
+
+                  small {
+                    br,
+                    strong {
+                      display: none !important;
+                    }
+
+                    font {
+                      color: #bac6db !important;
+
+                      * {
+                        color: #bac6db !important;
+                      }
+                    }
+
+                    display: flex !important;
+                    flex-direction: column !important;
+
+                    justify-content: flex-start !important;
+                  }
+                }
+              }
+
+              tr:has(td > font) {
+                opacity: 0.5 !important;
+                cursor: not-allowed !important;
+
+                
+
+                &:hover {
+                  background-color: transparent !important;
+                  cursor: not-allowed !important;
+                }
+              }
+            }
+          }
+
+          .mais {
+            display: none !important;
+          }
+        }
       }
     }
   }
@@ -288,6 +393,11 @@ html {
 #forum-portal,
 #participantes,
 br,
+script,
+#avaliacoes-portal,
 .info-docente {
   display: none !important;
+}
+.noticia .destaque {
+  all: unset !important;
 }
