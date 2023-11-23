@@ -7,7 +7,7 @@
     {
       "matches": ["https://*.sig.ifc.edu.br/*"],
       "js": ["app.js"],
-      "css": ["styles/main.css", "styles/cabecalho/cabecalho.css"]
+      "css": ["styles/main.css", "styles/cabecalho/cabecalho.css", "styles/turma/index.css"]
     }
   ]
 }

@@ -39,12 +39,12 @@ html {
 }
 #container #conteudo #portal-docente #perfil-docente {
   all: unset !important;
-  grid-area: user;
+  grid-area: user !important;
   width: 100% !important;
+  height: 100% !important;
   display: flex !important;
   flex-direction: column-reverse !important;
   justify-content: flex-end !important;
-  background-color: #eff3fa !important;
 }
 #container #conteudo #portal-docente #perfil-docente .pessoal-docente {
   display: none !important;
@@ -53,6 +53,11 @@ html {
   margin: 0;
   padding: 1em;
   padding-bottom: 1em;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  height: 100% !important;
 }
 #container #conteudo #portal-docente #perfil-docente #form_links,
 #container #conteudo #portal-docente #perfil-docente p[style="text-align: center; font-size: x-small"],
@@ -90,6 +95,7 @@ html {
 #container #conteudo #portal-docente #main-docente {
   all: unset !important;
   grid-area: main !important;
+  background-color: #fafafa !important;
   padding: 10px !important;
   display: flex !important;
   flex-direction: column !important;
@@ -109,6 +115,7 @@ html {
 }
 #container #conteudo #portal-docente #main-docente #turmas-portal * {
   all: unset !important;
+  transition: all 300ms ease-in-out !important;
 }
 #container #conteudo #portal-docente #main-docente #turmas-portal h4 {
   all: unset !important;
@@ -124,6 +131,8 @@ html {
   width: 100% !important;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
   margin-top: 0 !important;
+  border-radius: 5px !important;
+  overflow: hidden !important;
 }
 #container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead {
   width: 100% !important;
@@ -136,6 +145,7 @@ html {
   align-items: center !important;
   justify-content: space-between !important;
   padding: 0.5em !important;
+  font-weight: bold !important;
 }
 #container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] thead tr th:last-child {
   display: none !important;
@@ -165,6 +175,7 @@ html {
 }
 #container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr:hover {
   background-color: #dedfe3 !important;
+  cursor: pointer !important;
 }
 #container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td[style="text-align:left"] {
   width: -moz-min-content !important;
@@ -173,6 +184,12 @@ html {
 }
 #container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td:has(center) {
   width: 100% !important;
+  min-width: -moz-fit-content !important;
+  min-width: fit-content !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
 }
 #container #conteudo #portal-docente #main-docente #turmas-portal table[style="margin-top: 1%;"] tbody tr td:has(center) center {
   text-align: right !important;
@@ -211,6 +228,30 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal .mais {
+  border-radius: 5px !important;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  margin: 1em !important;
+  width: 100% !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal .mais:hover {
+  background-color: #dedfe3 !important;
+  cursor: pointer !important;
+}
+#container #conteudo #portal-docente #main-docente #turmas-portal .mais a {
+  padding: 1em !important;
+  font-weight: bold !important;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
 }
 #container #conteudo #portal-docente #main-docente #formAtividades {
   all: unset !important;
@@ -307,6 +348,8 @@ html {
 br,
 script,
 #avaliacoes-portal,
+#rodape,
+div[style="width: 80%; text-align: center; margin: 0 auto;"],
 .info-docente {
   display: none !important;
 }
